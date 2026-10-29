@@ -393,6 +393,12 @@
               "name": "Factory / manufacturing",
               "nameZh": "工厂／制造业",
               "code": "P05"
+            },
+            {
+              "id": "production-city-farm",
+              "name": "Urban agriculture / city farm",
+              "nameZh": "城市农业／城市农场",
+              "code": "P08"
             }
           ]
         },

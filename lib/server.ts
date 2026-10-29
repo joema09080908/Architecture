@@ -19,7 +19,7 @@ export async function requireAdmin(request:Request){const auth=await identity(re
 export function json(data:unknown,status=200){return Response.json(data,{status,headers:{'Cache-Control':'no-store'}});}
 export function failure(e:unknown){const message=e instanceof Error?e.message:'REQUEST_FAILED';return json({error:message},message==='FORBIDDEN'?403:message==='NOT_FOUND'?404:message==='INVALID_INPUT'?400:500);}
 export function assert(ok:unknown):asserts ok{if(!ok)throw new Error('INVALID_INPUT');}
-export const categories=()=>setting<Category[]>('categories',initial.themes as Category[]);
+export async function categories(){const tree=await setting<Category[]>('categories',initial.themes as Category[]);const specialist=tree.find(n=>n.id==='production')?.children?.find(n=>n.id==='production-specialist');const farm=(initial.themes as Category[]).find(n=>n.id==='production')?.children?.find(n=>n.id==='production-specialist')?.children?.find(n=>n.id==='production-city-farm');if(specialist&&farm&&!specialist.children?.some(n=>n.id===farm.id))specialist.children=[...(specialist.children||[]),farm];return tree;}
 export const scopes=()=>setting('scopes',defaultScopes);
 export async function record(id:string){const {db}=bindings();return db.prepare('SELECT * FROM observations WHERE id=?').bind(id).first<{id:string,payload:string,original_key:string,preview_key:string|null,published:number,created_at:string}>();}
 export function validateMetadata(input:any){assert(input&&typeof input==='object');for(const [k,limit] of [['latitude',90],['longitude',180]] as const)if(input[k]!==undefined&&input[k]!==null)assert(typeof input[k]==='number'&&Number.isFinite(input[k])&&Math.abs(input[k])<=limit);return input;}

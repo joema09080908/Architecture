@@ -10,6 +10,7 @@ export const defaultScopes: Scope[] = initialScopes as Scope[];
 export function flatten(nodes: Category[], parent?: Category): (Category & {parentId?: string})[] {return nodes.flatMap(n=>[{...n,parentId:parent?.id},...flatten(n.children||[],n)]);}
 export function descendants(node: Category): string[] {return [node.id,...(node.children||[]).flatMap(descendants)];}
 export function themeFor(ids:string[],nodes:Category[]){return nodes.find(n=>descendants(n).some(id=>ids.includes(id)));}
+export function themesFor(ids:string[],nodes:Category[]){return nodes.filter(n=>descendants(n).some(id=>ids.includes(id)));}
 export function locationOf(r:Observation){return r.location || (typeof r.metadata.latitude==='number'&&typeof r.metadata.longitude==='number'?{latitude:r.metadata.latitude,longitude:r.metadata.longitude}:undefined);}
 export function inPolygon(lat:number,lng:number,points:[number,number][]){let inside=false;for(let i=0,j=points.length-1;i<points.length;j=i++){const [yi,xi]=points[i],[yj,xj]=points[j];if(((yi>lat)!==(yj>lat))&&(lng<(xj-xi)*(lat-yi)/(yj-yi)+xi))inside=!inside;}return inside;}
 export function categoryName(n:Category,l:Locale){return l==='zh'?(n.nameZh||n.name):n.name;}
