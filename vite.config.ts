@@ -23,7 +23,11 @@ const localBindingConfig = {
         {
           binding: d1,
           database_name: "site-creator-d1",
-          database_id: SITE_CREATOR_PLACEHOLDER_DATABASE_ID,
+          // Cloudflare Builds provisions the account's D1 database. The
+          // placeholder is only for local preview and Sites packaging.
+          ...(process.env.WORKERS_CI === "1"
+            ? {}
+            : { database_id: SITE_CREATOR_PLACEHOLDER_DATABASE_ID }),
         },
       ]
     : [],
