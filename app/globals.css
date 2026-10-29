@@ -157,9 +157,14 @@
 .upload-map-location>span button{text-decoration:underline;margin-left:8px}
 
 .intro-theme-list .intro-all-records>b{grid-column:2 / 4}
-.observation-marker{position:relative;width:220px;height:60px;display:flex;justify-content:center;align-items:flex-start}
-.observation-marker .map-pin{max-width:220px;position:relative;z-index:2}
-.observation-pin-tip{position:absolute;left:calc(50% - 8.5px);bottom:4px;width:17px;height:17px;border-radius:50% 50% 0 50%;transform:rotate(45deg);background:currentColor;border:2px solid white;box-shadow:1px 2px 3px #0005}
-.observation-pin-tip:after{content:'';position:absolute;inset:4px;background:white;border-radius:50%}
+.thread-pin-shell{background:transparent;border:0;overflow:visible}
+.thread-pin{position:relative;width:32px;height:38px;filter:drop-shadow(2px 3px 2px #24211c55);transform-origin:16px 36px;transition:transform .18s ease}
+.thread-pin-shell:hover .thread-pin,.thread-pin.is-active{transform:scale(1.25)}
+.thread-pin-shadow{position:absolute;left:11px;bottom:-1px;width:13px;height:4px;border-radius:50%;background:#201e1b55;filter:blur(2px)}
+.thread-pin-stem{position:absolute;left:15px;top:12px;width:2px;height:24px;transform:rotate(5deg);transform-origin:top;background:linear-gradient(90deg,#77746f,#e9e8e4 42%,#686560);clip-path:polygon(0 0,100% 0,75% 100%,25% 100%)}
+.thread-pin-neck{position:absolute;left:11px;top:12px;width:10px;height:6px;border-radius:2px;background:linear-gradient(90deg,#5d5954,#eceae5 45%,#4f4a46)}
+.thread-pin-head{position:absolute;left:6px;top:1px;width:20px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#fff 0,#f0eae1 20%,var(--pin-accent) 65%,#38332f 100%);border:1px solid #49423c;box-shadow:inset -2px -2px 3px #302b2755,0 1px 1px #fff9}
+.thread-pin-count{position:absolute;left:21px;top:-5px;min-width:17px;height:17px;padding:2px 3px;border-radius:9px;background:#262321;color:#fff;font:700 10px/13px Arial,sans-serif;text-align:center;box-shadow:0 1px 3px #0005}
+.field-pin-tooltip{transform:translateY(-3px)}
 .map-network-legend{position:absolute;left:10px;bottom:33px;z-index:500;max-width:calc(100% - 66px);padding:7px 10px;background:#fffffff0;border:1px solid #d7d3cd;pointer-events:none;display:grid;gap:4px;font-size:11px}
 .map-network-legend strong{font-size:10px;letter-spacing:.05em}
