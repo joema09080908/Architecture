@@ -9,10 +9,14 @@ export default function HousingPrelude({locale,onClose}:{locale:Locale;onClose:(
  return <div className="housing-prelude booklet-intro" role="dialog" aria-modal="true" aria-label={en?'Field research booklet':'场地研究图册'}>
   <header className="booklet-top"><span>REGIS ROAD <i/> FIELD ATLAS</span><button onClick={onClose}>{en?'ENTER THE ATLAS ↗':'进入场地图册 ↗'}</button></header>
   <div className="booklet-stage">
+   <span className="booklet-margin-note booklet-margin-left">REGIS ROAD / SITE RESEARCH / 2026</span>
+   <span className="booklet-margin-note booklet-margin-right">HOUSING · CARE · COHABITATION · PRODUCTION · BELONGING</span>
    <div className="booklet-heading"><span>01 — 02 / {en?'FIELD RESEARCH':'场地研究'}</span><h1>{en?'HOW WE LIVE. HOW WE BELONG.':'我们的生活。我们的归属。'}</h1><span>LONDON / KENTISH TOWN</span></div>
    <main className="booklet-spread" aria-label={en?'Open research booklet':'展开的研究图册'}>
     <button className="booklet-page booklet-page-left" onClick={()=>setSelected('mind')} aria-label={en?'Open mind map':'打开思维导图'}><img src="/research/mind-map.webp" alt="Research mind map"/><span className="booklet-page-label"><b>01</b> {en?'MIND MAP':'思维导图'} <em>↗</em></span></button>
     <button className="booklet-page booklet-page-right" onClick={()=>setSelected('housing')} aria-label={en?'Open 16 housing drawings':'打开16栋住宅线稿'}><img src="/research/housing-sheet.webp" alt="Sixteen housing typology drawings"/><span className="booklet-page-label"><b>02</b> {en?'16 HOUSING STUDIES':'16栋住宅线稿'} <em>↗</em></span></button>
+    <img className="booklet-grip booklet-grip-left" src="/research/booklet-hand-left.webp" alt="" aria-hidden="true"/>
+    <img className="booklet-grip booklet-grip-right" src="/research/booklet-hand-right.webp" alt="" aria-hidden="true"/>
    </main>
    <div className="booklet-below"><span>{en?'TWO RESEARCH PLATES / SELECT A PAGE TO EXPLORE':'两张研究图版 / 点击任一页展开'}</span><button onClick={onClose}>{en?'CONTINUE TO MAP + COLLECTION →':'继续到地图＋选集 →'}</button></div>
   </div>
