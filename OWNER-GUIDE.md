@@ -2,7 +2,7 @@
 
 线上地址：https://regis-road-fieldnotes.secret-yew-9188.chatgpt.site
 
-目前网站仅允许所有者账户访问。手机或 iPad 需要使用创建网站时的同一个 ChatGPT 账户登录。打开网址后点 **使用 ChatGPT 继续**。公开访客权限尚未开启。
+网站已开放访客查看：手机或 iPad 拿到链接即可浏览公开记录。编辑与上传仍只限所有者；管理时请用创建网站时的同一个 ChatGPT 账户登录。
 
 ## 上传原始照片或视频
 
