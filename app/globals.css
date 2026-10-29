@@ -161,9 +161,9 @@
 .thread-pin{position:relative;width:32px;height:38px;filter:drop-shadow(2px 3px 2px #24211c55);transform-origin:16px 36px;transition:transform .18s ease}
 .thread-pin-shell:hover .thread-pin,.thread-pin.is-active{transform:scale(1.25)}
 .thread-pin-shadow{position:absolute;left:11px;bottom:-1px;width:13px;height:4px;border-radius:50%;background:#201e1b55;filter:blur(2px)}
-.thread-pin-stem{position:absolute;left:15px;top:12px;width:2px;height:24px;transform:rotate(5deg);transform-origin:top;background:linear-gradient(90deg,#77746f,#e9e8e4 42%,#686560);clip-path:polygon(0 0,100% 0,75% 100%,25% 100%)}
-.thread-pin-neck{position:absolute;left:11px;top:12px;width:10px;height:6px;border-radius:2px;background:linear-gradient(90deg,#5d5954,#eceae5 45%,#4f4a46)}
-.thread-pin-head{position:absolute;left:6px;top:1px;width:20px;height:16px;border-radius:50%;background:radial-gradient(circle at 35% 28%,#fff 0,#f0eae1 20%,var(--pin-accent) 65%,#38332f 100%);border:1px solid #49423c;box-shadow:inset -2px -2px 3px #302b2755,0 1px 1px #fff9}
+.thread-pin-stem{position:absolute;left:14px;top:13px;width:4px;height:23px;transform:rotate(5deg);transform-origin:top;background:linear-gradient(90deg,#3c3a37,#dad7d1 38%,#4b4844 65%,#24221f);clip-path:polygon(0 0,100% 0,57% 100%,35% 100%);filter:drop-shadow(1px 0 1px #1118)}
+.thread-pin-neck{position:absolute;left:11px;top:12px;width:10px;height:6px;border-radius:2px;background:linear-gradient(90deg,#393632,#d8d4cd 40%,#312d29)}
+.thread-pin-head{position:absolute;left:6px;top:1px;width:20px;height:16px;border-radius:50%;background:radial-gradient(circle at 33% 24%,#fff 0,#d8d2c8 14%,var(--pin-accent) 50%,#38332f 100%);border:1px solid #35312d;box-shadow:inset -2px -2px 3px #302b2777,0 1px 1px #fff9}
 .thread-pin-count{position:absolute;left:21px;top:-5px;min-width:17px;height:17px;padding:2px 3px;border-radius:9px;background:#262321;color:#fff;font:700 10px/13px Arial,sans-serif;text-align:center;box-shadow:0 1px 3px #0005}
 .field-pin-tooltip{transform:translateY(-3px)}
 .map-network-legend{position:absolute;left:10px;bottom:33px;z-index:500;max-width:calc(100% - 66px);padding:7px 10px;background:#fffffff0;border:1px solid #d7d3cd;pointer-events:none;display:grid;gap:4px;font-size:11px}
