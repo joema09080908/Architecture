@@ -159,7 +159,7 @@
 .intro-theme-list .intro-all-records>b{grid-column:2 / 4}
 .observation-marker{position:relative;width:220px;height:60px;display:flex;justify-content:center;align-items:flex-start}
 .observation-marker .map-pin{max-width:220px;position:relative;z-index:2}
-.observation-pin-tip{position:absolute;left:102px;bottom:4px;width:17px;height:17px;border-radius:50% 50% 0 50%;transform:rotate(45deg);background:currentColor;border:2px solid white;box-shadow:1px 2px 3px #0005}
+.observation-pin-tip{position:absolute;left:calc(50% - 8.5px);bottom:4px;width:17px;height:17px;border-radius:50% 50% 0 50%;transform:rotate(45deg);background:currentColor;border:2px solid white;box-shadow:1px 2px 3px #0005}
 .observation-pin-tip:after{content:'';position:absolute;inset:4px;background:white;border-radius:50%}
 .map-network-legend{position:absolute;left:10px;bottom:33px;z-index:500;max-width:calc(100% - 66px);padding:7px 10px;background:#fffffff0;border:1px solid #d7d3cd;pointer-events:none;display:grid;gap:4px;font-size:11px}
 .map-network-legend strong{font-size:10px;letter-spacing:.05em}
