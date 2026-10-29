@@ -118,6 +118,13 @@
 @keyframes booklet-grip-arrive{from{opacity:0}to{opacity:1}}
 @media(max-width:700px){.booklet-grip{display:none}}
 @media(prefers-reduced-motion:reduce){.booklet-grip{animation:none}}
+.housing-prelude.booklet-intro{background:radial-gradient(ellipse at 50% 38%,#51565a 0%,#393d40 60%,#272a2d 100%);color:#f4f1ea}
+.booklet-page{color:#222}
+.booklet-margin-note{color:#c9c4bb}
+.booklet-grip{top:auto;bottom:-50px;height:75vh;width:auto;max-width:none}
+.booklet-grip-left{transform:translateX(-68%)}
+.booklet-grip-right{transform:translateX(68%)}
+@media(max-width:700px){.housing-prelude.booklet-intro{background:#eae8e3;color:#222}}
 .housing-prelude.booklet-intro{overflow-x:hidden}
 .booklet-stage{width:100%;overflow-x:clip;padding-bottom:4px}
 .booklet-heading{margin-bottom:5px}
