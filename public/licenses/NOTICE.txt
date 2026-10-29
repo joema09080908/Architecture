@@ -1,0 +1,4 @@
+HEIC browser conversion: heic-to 1.6.7 and its bundled libheif / libde265 codecs.
+Source: https://github.com/hoppergee/heic-to
+License: GNU Lesser General Public License 3.0 or later.
+Full license notice: /licenses/heic-to-LICENSE.txt
