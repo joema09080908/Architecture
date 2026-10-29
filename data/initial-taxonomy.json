@@ -1,0 +1,426 @@
+{
+  "version": 1,
+  "language": "en",
+  "status": "Initial taxonomy transcribed from user-supplied reference tables; proposed locations have not been geocoded or verified.",
+  "themes": [
+    {
+      "id": "housing",
+      "name": "Housing",
+      "color": "#242424",
+      "symbol": "square",
+      "children": [
+        {
+          "id": "dwelling-types",
+          "name": "Dwelling Types",
+          "children": [
+            {
+              "id": "dwelling-a01",
+              "code": "A01",
+              "name": "Narrow terraced house",
+              "nameZh": "狭窄联排住宅"
+            },
+            {
+              "id": "dwelling-a02",
+              "code": "A02",
+              "name": "Basement / lower-ground flat",
+              "nameZh": "地下／半地下公寓"
+            },
+            {
+              "id": "dwelling-a03",
+              "code": "A03",
+              "name": "Ground-floor garden flat",
+              "nameZh": "首层花园公寓"
+            },
+            {
+              "id": "dwelling-a04",
+              "code": "A04",
+              "name": "Upper-floor converted flat",
+              "nameZh": "楼上改建公寓"
+            },
+            {
+              "id": "dwelling-a05",
+              "code": "A05",
+              "name": "Loft / attic flat",
+              "nameZh": "阁楼公寓"
+            },
+            {
+              "id": "dwelling-a06",
+              "code": "A06",
+              "name": "Corner / end-terrace unit",
+              "nameZh": "转角／端头住宅"
+            },
+            {
+              "id": "dwelling-a07",
+              "code": "A07",
+              "name": "Semi-detached / detached house",
+              "nameZh": "半独立／独立住宅"
+            },
+            {
+              "id": "dwelling-a08",
+              "code": "A08",
+              "name": "Split-level dwelling",
+              "nameZh": "错层住宅"
+            },
+            {
+              "id": "dwelling-a09",
+              "code": "A09",
+              "name": "Duplex / maisonette",
+              "nameZh": "复式住宅"
+            },
+            {
+              "id": "dwelling-a10",
+              "code": "A10",
+              "name": "Stacked maisonette",
+              "nameZh": "叠置复式住宅"
+            },
+            {
+              "id": "dwelling-a11",
+              "code": "A11",
+              "name": "Stepped-section dwelling",
+              "nameZh": "阶梯剖面住宅"
+            },
+            {
+              "id": "dwelling-a12",
+              "code": "A12",
+              "name": "Single-level apartment",
+              "nameZh": "单层公寓"
+            },
+            {
+              "id": "dwelling-a13",
+              "code": "A13",
+              "name": "Deck-access dwelling",
+              "nameZh": "外廊式住宅"
+            },
+            {
+              "id": "dwelling-a14",
+              "code": "A14",
+              "name": "Tower apartment",
+              "nameZh": "塔楼公寓"
+            },
+            {
+              "id": "dwelling-a15",
+              "code": "A15",
+              "name": "Courtyard-facing dwelling",
+              "nameZh": "面向庭院的住宅"
+            },
+            {
+              "id": "dwelling-a16",
+              "code": "A16",
+              "name": "Mews / backland townhouse",
+              "nameZh": "后巷／内地联排住宅"
+            }
+          ],
+          "nameZh": "住宅类型"
+        },
+        {
+          "id": "urban-block-types",
+          "name": "Urban Block Types",
+          "children": [
+            {
+              "id": "block-b01",
+              "code": "B01",
+              "name": "Free-standing tower",
+              "nameZh": "独立塔楼"
+            },
+            {
+              "id": "block-b02",
+              "code": "B02",
+              "name": "Linear terrace",
+              "nameZh": "线性联排"
+            },
+            {
+              "id": "block-b03",
+              "code": "B03",
+              "name": "Enclosed courtyard",
+              "nameZh": "围合庭院"
+            },
+            {
+              "id": "block-b04",
+              "code": "B04",
+              "name": "Clustered housing",
+              "nameZh": "组团住宅"
+            },
+            {
+              "id": "block-b05",
+              "code": "B05",
+              "name": "Parallel slab",
+              "nameZh": "平行板式住宅"
+            },
+            {
+              "id": "block-b06",
+              "code": "B06",
+              "name": "Broken perimeter block",
+              "nameZh": "非闭合周边街区"
+            },
+            {
+              "id": "block-b07",
+              "code": "B07",
+              "name": "U-shaped / meandering block",
+              "nameZh": "U形／曲折街区"
+            },
+            {
+              "id": "block-b08",
+              "code": "B08",
+              "name": "Elevated podium / deck street",
+              "nameZh": "抬升平台／空中街道"
+            }
+          ],
+          "nameZh": "街区组成形式"
+        }
+      ],
+      "nameZh": "居住"
+    },
+    {
+      "id": "care",
+      "name": "Care",
+      "color": "#963F3F",
+      "symbol": "plus",
+      "children": [
+        {
+          "id": "care-services",
+          "name": "Care, Health & Education",
+          "nameZh": "照护、健康与教育",
+          "children": [
+            {
+              "id": "care-older",
+              "name": "Older People’s Care",
+              "nameZh": "老年人照护",
+              "code": "C01"
+            },
+            {
+              "id": "care-early",
+              "name": "Nursery / Kindergarten",
+              "nameZh": "托育／幼儿园",
+              "code": "C02"
+            },
+            {
+              "id": "care-primary",
+              "name": "Primary School",
+              "nameZh": "小学",
+              "code": "C03"
+            },
+            {
+              "id": "care-health",
+              "name": "Health & Wellbeing Centre",
+              "nameZh": "健康养护中心",
+              "code": "C04"
+            },
+            {
+              "id": "care-intergen",
+              "name": "Intergenerational Care",
+              "nameZh": "跨年龄照护",
+              "code": "C05"
+            }
+          ]
+        },
+        {
+          "id": "care-access",
+          "name": "Accessibility & Support",
+          "nameZh": "无障碍与支持设施",
+          "children": [
+            {
+              "id": "care-stepfree",
+              "name": "Step-free Access",
+              "nameZh": "无台阶通行",
+              "code": "C06"
+            },
+            {
+              "id": "care-lift",
+              "name": "Accessible Lift / Ramp",
+              "nameZh": "无障碍电梯／坡道",
+              "code": "C07"
+            },
+            {
+              "id": "care-toilet",
+              "name": "Accessible Toilet / Changing Facility",
+              "nameZh": "无障碍卫生间／护理设施",
+              "code": "C08"
+            },
+            {
+              "id": "care-rest",
+              "name": "Resting / Support Facility",
+              "nameZh": "休息／辅助设施",
+              "code": "C09"
+            }
+          ]
+        }
+      ],
+      "nameZh": "关怀与照护"
+    },
+    {
+      "id": "cohabitation",
+      "name": "Cohabitation",
+      "color": "#C8B79C",
+      "symbol": "circle",
+      "children": [
+        {
+          "id": "cohabitation-green",
+          "name": "Parks & Shared Gardens",
+          "nameZh": "公园与共享花园",
+          "children": [
+            {
+              "id": "cohabitation-park",
+              "name": "Public Park",
+              "nameZh": "公共公园",
+              "code": "CO01"
+            },
+            {
+              "id": "cohabitation-garden",
+              "name": "Community / Shared Garden",
+              "nameZh": "社区／共享花园",
+              "code": "CO02"
+            }
+          ]
+        },
+        {
+          "id": "cohabitation-common",
+          "name": "Common & Public Spaces",
+          "nameZh": "共同与公共空间",
+          "children": [
+            {
+              "id": "cohabitation-square",
+              "name": "Public Square / Common Space",
+              "nameZh": "公共广场／共同空间",
+              "code": "CO03"
+            },
+            {
+              "id": "cohabitation-courtyard",
+              "name": "Shared Courtyard / Communal Room",
+              "nameZh": "共享庭院／公共活动室",
+              "code": "CO04"
+            }
+          ]
+        },
+        {
+          "id": "cohabitation-participation",
+          "name": "Play & Community Participation",
+          "nameZh": "游戏与社区参与",
+          "children": [
+            {
+              "id": "cohabitation-play",
+              "name": "Shared Play / Recreation",
+              "nameZh": "共同游戏／休闲",
+              "code": "CO05"
+            },
+            {
+              "id": "cohabitation-gather",
+              "name": "Community Gathering / Invitation",
+              "nameZh": "社区聚集／参与邀请",
+              "code": "CO06"
+            }
+          ]
+        }
+      ],
+      "nameZh": "共用空间"
+    },
+    {
+      "id": "belongings",
+      "name": "Belonging",
+      "color": "#D94B43",
+      "symbol": "diamond",
+      "children": [
+        {
+          "id": "belonging-symbols",
+          "name": "Identity, Culture & Symbols",
+          "nameZh": "身份、文化与符号",
+          "code": "BL01"
+        },
+        {
+          "id": "belonging-memory",
+          "name": "Local Memory & Stories",
+          "nameZh": "地方记忆与故事",
+          "code": "BL02"
+        },
+        {
+          "id": "belonging-places",
+          "name": "Places of Belonging",
+          "nameZh": "具有归属感的场所",
+          "code": "BL03"
+        },
+        {
+          "id": "belonging-practices",
+          "name": "Everyday Culture & Practices",
+          "nameZh": "日常文化与活动",
+          "code": "BL04"
+        }
+      ],
+      "nameZh": "归属与地方认同"
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "color": "#747474",
+      "symbol": "triangle",
+      "children": [
+        {
+          "id": "production-shared",
+          "name": "Shared Workspaces",
+          "nameZh": "共享工作空间",
+          "children": [
+            {
+              "id": "production-cowork",
+              "name": "Co-working space",
+              "nameZh": "共享办公",
+              "code": "P01"
+            },
+            {
+              "id": "production-shared-workshop",
+              "name": "Shared workshop / maker space",
+              "nameZh": "共享工坊／创客空间",
+              "code": "P02"
+            }
+          ]
+        },
+        {
+          "id": "production-specialist",
+          "name": "Dedicated Workspaces",
+          "nameZh": "专门工作与生产场所",
+          "children": [
+            {
+              "id": "production-photo",
+              "name": "Photography / creative studio",
+              "nameZh": "摄影／创意工作室",
+              "code": "P03"
+            },
+            {
+              "id": "production-workshop",
+              "name": "Workshop / repair space",
+              "nameZh": "工坊／维修场所",
+              "code": "P04"
+            },
+            {
+              "id": "production-factory",
+              "name": "Factory / manufacturing",
+              "nameZh": "工厂／制造业",
+              "code": "P05"
+            }
+          ]
+        },
+        {
+          "id": "production-storage",
+          "name": "Storage & Logistics",
+          "nameZh": "仓储与物流",
+          "children": [
+            {
+              "id": "production-warehouse",
+              "name": "Warehouse / storage",
+              "nameZh": "仓库／储存空间",
+              "code": "P06"
+            },
+            {
+              "id": "production-distribution",
+              "name": "Distribution / loading space",
+              "nameZh": "配送／装卸空间",
+              "code": "P07"
+            }
+          ]
+        }
+      ],
+      "nameZh": "生产与劳动"
+    }
+  ],
+  "supportedLanguages": [
+    "en",
+    "zh"
+  ]
+}
